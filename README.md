@@ -38,6 +38,7 @@
 |group_id|integer|
 
 ---
+
 ##details
 
 1. messagesテーブル
