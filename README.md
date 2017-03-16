@@ -19,7 +19,7 @@ belongs_to :group
 
 |column|type|etc|
 |:--|--:|:--:|
-|name|string|null: false|
+|name|string|null: false, unique|
 |mail|text|null: false, unique|
 |password|string|null: false|
 
