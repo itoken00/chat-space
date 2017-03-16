@@ -3,7 +3,7 @@
 
 ---
 
-1. messagesテーブル
+### messagesテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -17,7 +17,7 @@ belongs_to :user
 
 belongs_to :group
 
-1. usersテーブル
+### usersテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -33,7 +33,7 @@ has_many :group_users
 
 has_many :messages
 
-1. groupsテーブル
+### groupsテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -47,7 +47,7 @@ has_many: group_users
 has_many: messages
 
 
-1. group-usersテーブル
+### group-usersテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -63,14 +63,14 @@ belongs_to :group
 
 # details
 
-1. messagesテーブル
+### messagesテーブル
 各ユーザーの書き込みメッセージを保存します。
 
-1. usersテーブル
+### usersテーブル
 各ユーザーの個人情報を保存します。
 
-1. groupsテーブル
+### groupsテーブル
 各グループ名を保存します。
 
-1. groups-usersテーブル
+### groups-usersテーブル
 どのグループにどのユーザーが所属しているかの情報を保存します。
