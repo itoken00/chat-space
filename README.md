@@ -11,6 +11,7 @@
 |group_id|references|foreign_key|
 |user_id|references|foreign_key|
 
+
 belongs_to :user
 belongs_to :group
 
@@ -22,6 +23,8 @@ belongs_to :group
 |mail|text|null: false, unique|
 |password|string|null: false|
 
+
+
 has_many :groups, through: :group_users
 has_many :group_users
 has_many :messages
@@ -31,6 +34,8 @@ has_many :messages
 |column|type|etc|
 |:--|--:|:--:|
 |name|string|null: false, unique|
+
+
 has_many: users, through: :group_users
 has_many: group_users
 has_many: messages
@@ -42,6 +47,8 @@ has_many: messages
 |:--|--:|:--:|
 |user_id|references|null: false|
 |group_id|references|null: false|
+
+
 belongs_to :user
 belongs_to :group
 
