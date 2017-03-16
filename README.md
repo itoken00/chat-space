@@ -18,7 +18,7 @@ belongs_to :users
 
 |column|type|etc|
 |:--|--:|:--:|
-|nick_name|string|preference|
+|name|string|preference|
 |mail|string||
 |password|string||
 
@@ -30,7 +30,7 @@ has_many :groups_to
 |column|type|etc|
 |:--|--:|:--:|
 |name|integer||
-|user_id|integer|preference|
+|group_id|integer|preference|
 
 belongs_to :users
 
