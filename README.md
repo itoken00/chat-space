@@ -22,22 +22,21 @@ belongs_to :group
 |mail|text|null: false, unique|
 |password|string|null: false|
 
-has_many :groups, through: :users_groups
-has_many :groups_users
+has_many :groups, through: :group_users
+has_many :group_users
 has_many :messages
 
 1.groupsテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
-|name|string|null: false|
-has_many: users, through: :groups_users
-has_many: groups_users
+|name|string|null: false, unique|
+has_many: users, through: :group_users
+has_many: group_users
 has_many: messages
 
-belongs_to :user
 
-1.groups-usersテーブル
+1.group-usersテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
