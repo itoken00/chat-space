@@ -13,9 +13,10 @@
 
 
 belongs_to :user
+
 belongs_to :group
 
-1.usersテーブル
+1. usersテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -26,10 +27,12 @@ belongs_to :group
 
 
 has_many :groups, through: :group_users
+
 has_many :group_users
+
 has_many :messages
 
-1.groupsテーブル
+1. groupsテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -37,11 +40,13 @@ has_many :messages
 
 
 has_many: users, through: :group_users
+
 has_many: group_users
+
 has_many: messages
 
 
-1.group-usersテーブル
+1. group-usersテーブル
 
 |column|type|etc|
 |:--|--:|:--:|
@@ -50,20 +55,21 @@ has_many: messages
 
 
 belongs_to :user
+
 belongs_to :group
 
 ---
 
-## details
+# details
 
 1. messagesテーブル
-Save message burning in "chat space".
+各ユーザーの書き込みメッセージを保存します。
 
 1. usersテーブル
-Introduction of login function for account creation.
+各ユーザーの個人情報を保存します。
 
-1.groupsテーブル
-Information and group name of the person who belongs to each group.
+1. groupsテーブル
+各グループ名を保存します。
 
-1.groups-usersテーブル
-Details on which user belongs to which group.
+1. groups-usersテーブル
+どのグループにどのユーザーが所属しているかの情報を保存します。
