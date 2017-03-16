@@ -2,6 +2,7 @@
 
 
 ---
+
 1. messagesテーブル
 
 |column|type|etc|
