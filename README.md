@@ -9,7 +9,7 @@
 |body|text||
 |image|string||
 |group_id|integer||
-|user_id|integer|preference|
+|user_id|integer|unique: true|
 
 belongs_to :users
 
@@ -18,9 +18,9 @@ belongs_to :users
 
 |column|type|etc|
 |:--|--:|:--:|
-|name|string|preference|
+|name|string||
 |mail|string||
-|password|string||
+|password|string|null: false|
 
 has_many :messages
 has_many :groups_to
@@ -29,8 +29,8 @@ has_many :groups_to
 
 |column|type|etc|
 |:--|--:|:--:|
-|name|integer||
-|group_id|integer|preference|
+|name|string||
+|group_id|integer||
 
 belongs_to :users
 
