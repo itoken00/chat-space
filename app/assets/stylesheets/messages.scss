@@ -10,9 +10,8 @@ html,body {
   height: 100%;
 
 
-
 // サイド
-  .chat-side{
+  &-side{
     float: left;
     width: 300px;
     height: 100%;
@@ -71,7 +70,7 @@ html,body {
 
 
 // メイン
-  .chat-main{
+  &-main{
   float: left;
   position: relative;
   width: calc(100% - 300px);
