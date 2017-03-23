@@ -2,12 +2,9 @@
 html,body {
   height: 100%;
 
-//フラッシュメッセージ
 .alert.alert-info {
   text-align: center;
   background-color: blue;
-
-
 
 .alert.alert-error {
   text-align: center;
@@ -15,6 +12,8 @@ html,body {
     }
   }
 }
+
+
 
 // 大枠
 .chat {
@@ -79,7 +78,6 @@ html,body {
       }
     }
   }
-
 
 
 // メイン
