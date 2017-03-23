@@ -5,7 +5,8 @@
       %h5
       .chat-user__actions
         %i.fa.fa-pencil-square-o
-        %i.fa.fa-cog
+        = link_to edit_user_registration_path do
+          %i.fa.fa-cog
   %ul.chat-groups
     %li.chat-group
       %p.chat-group__name
