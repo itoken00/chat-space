@@ -2,30 +2,17 @@
 html,body {
   height: 100%;
 
-
-  //フラッシュメッセージ
 .alert.alert-info {
   text-align: center;
-  background-color: blue;
+  background-color: #3333ff;
 
 .alert.alert-error {
   text-align: center;
-  background-color: red;
+  background-color: #f05050;
     }
   }
 }
 
-
-//フラッシュメッセージ
-.alert.alert-info {
-  text-align: center;
-  background-color: blue;
-}
-
-.alert.alert-error {
-  text-align: center;
-  background-color: red;
-}
 
 
 // 大枠
