@@ -7,10 +7,12 @@
   border-radius: 5px;
   box-sizing: border-box;
 
+
   h1 {
     letter-spacing: 2px;
     font-size: 24px;
     text-align: center;
+    font-weight: bold;
   }
 
   &__errors {
@@ -49,11 +51,13 @@
       padding-right: 20px;
       padding-left: 20px;
       box-sizing: border-box;
+      margin-bottom: 40px;
     }
 
     &--right {
       float: right;
       width: 70%;
+      margin-bottom: 40px;
     }
 
     .chat-group-form__label {
@@ -63,7 +67,7 @@
       text-align: right;
     }
 
-    .chat-groups-form__input {
+    .chat-group-form__input {
       float: left;
       width: 100%;
       line-height: 30px;
@@ -79,7 +83,6 @@
     border-bottom: 1px solid #ddd;
 
     &__name {
-      float: left;
     }
 
     &__btn {
