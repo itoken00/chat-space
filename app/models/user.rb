@@ -6,5 +6,4 @@ class User < ApplicationRecord
   has_many :groups, through: :group_users
   has_many :messages
   has_many :group_users
-  accepts_nested_attributes_for :groups
 end
