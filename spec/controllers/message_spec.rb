@@ -14,5 +14,17 @@ describe MessagesController do
     it 'assigns the requested contact @message' do
       expect(assigns(:message)).to be_a_new(Message)
     end
+
+    it 'assigns the requested contact @messages' do
+      expect(assigns(:messages)).to eq group.messages
+    end
+
+    it 'assigns the requested contact @group' do
+      expect(assigns(:group)).to eq group
+    end
+
+    it 'renders the :index template' do
+      expect(response).to render_template :index
+    end
   end
 end
