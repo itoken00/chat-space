@@ -1,0 +1,28 @@
+.chat.clearfix
+
+  .chat-side
+    .chat-user.clearfix
+      %h5
+      .chat-user__actions
+        = link_to new_group_path do
+          %i.fa.fa-pencil-square-o
+        = link_to edit_user_registration_path do
+          %i.fa.fa-cog
+  %ul.chat-groups
+    %li.chat-group
+      %p.chat-group__name
+      %p.chat-group__message
+
+  .chat-main
+    .chat-header.clearfix
+      .chat-header__left
+        %h2
+        %p.chat-header__users
+      .chat-header__right
+
+    .chat-body
+      %ul.chat-messages
+        %li.chat-message
+          .chat-message__header.clearfix
+    .chat-footer
+      .chat-footer__body
