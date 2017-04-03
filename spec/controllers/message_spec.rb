@@ -47,15 +47,15 @@ describe MessagesController do
     end
 
     context 'Failed to save' do
-      let(:invalid_attributes){ FactoryGirl.attributes_for(:message, body: nil) }
+      let(:valid_attributes){ FactoryGirl.attributes_for(:message, body: nil) }
 
       before do
-        post :create, params: { group_id: group.id, message: invalid_attributes }
+        post :create, params: { group_id: group.id, message: valid_attributes }
       end
 
 
       it 'can not the new contact in the database' do
-        expect{post :create, params: { group_id: group.id, message: invalid_attributes }}.to change(Message, :count).by(0)
+        expect{post :create, params: { group_id: group.id, message: valid_attributes }}.to change(Message, :count).by(0)
       end
 
       it ' create unsuccessfully to render the same template' do
