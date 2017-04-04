@@ -12,7 +12,7 @@ $(function() {
     return html;
   }
 
-  $('.js-form'). on('submit', function(e){
+  $('.js-form').on('submit', function(e){
     e.preventDefault();
     e.stopPropagation();
     var formData = new FormData ($(this).get(0));
@@ -27,7 +27,10 @@ $(function() {
     })
     .done(function(data) {
       var html = buildHTML(data);
-      $('.messages').append(html);
+      $('.chat-body').append(html);
+      $('.chat-body').delay(100).animate({
+      scrollTop: $(document).height()
+    },1500);
     })
     .fail(function() {
       alert('error');
