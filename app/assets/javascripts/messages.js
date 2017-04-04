@@ -29,7 +29,7 @@ $(function() {
       var html = buildHTML(data);
       $('.chat-body').append(html);
       $('.chat-body').delay(100).animate({
-      scrollTop: $(document).height()
+      scrollTop: $('.chat-messages').height()
     },1500);
     })
     .fail(function() {
