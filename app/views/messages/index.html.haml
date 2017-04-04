@@ -27,7 +27,7 @@
           = render partial: "messages"
     .chat-footer
       .chat-footer__body
-        = form_for [@group, @message] do |f|
+        = form_for ([@group,@message]), html: { class: 'js-form'} do |f|
           = f.text_field :body, placeholder: "type amessage", class: "text-field"
           = f.submit "SEND", class: "send-btn"
           = fa_icon 'file-image-o'
